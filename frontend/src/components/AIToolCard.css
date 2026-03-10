@@ -1,0 +1,95 @@
+.ai-tool-card {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.ai-tool-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ai-tool-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ai-tool-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.ai-tool-category {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.ai-tool-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.ai-tool-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.feature-tag {
+    padding: 3px 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    font-size: 11px;
+    color: var(--text-secondary);
+}
+
+.vscode-install-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    background: rgba(0, 122, 204, 0.06);
+    border: 1px solid rgba(0, 122, 204, 0.2);
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    flex-wrap: wrap;
+}
+
+.vscode-ext-id {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+}
+
+.ai-tool-expanded {
+    background: var(--bg-glass);
+    border-radius: var(--radius-sm);
+    padding: 12px;
+    border-left: 3px solid var(--accent-blue);
+}
+
+.ai-tool-card.expanded {
+    border-color: rgba(99, 102, 241, 0.35);
+    box-shadow: var(--shadow-glow-sm);
+}
+
+.ai-tool-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 4px;
+    flex-wrap: wrap;
+    align-items: center;
+}

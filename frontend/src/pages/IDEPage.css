@@ -1,0 +1,71 @@
+.ide-accounts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.ide-account-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    transition: var(--transition);
+}
+
+.ide-account-card.connected {
+    border-color: rgba(99, 102, 241, 0.3);
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.ide-account-card.connected-google {
+    border-color: rgba(66, 133, 244, 0.3);
+    background: rgba(66, 133, 244, 0.05);
+}
+
+.ide-account-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ide-link-banner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 18px;
+    flex-wrap: wrap;
+}
+
+/* Small Google button for inline use */
+.btn-google-sm {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 600;
+    background: #ffffff;
+    color: #1a1a1a;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.btn-google-sm:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(66, 133, 244, 0.4);
+}
+
+@media (max-width: 720px) {
+    .ide-accounts-grid {
+        grid-template-columns: 1fr;
+    }
+}
